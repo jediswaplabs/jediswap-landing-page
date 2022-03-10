@@ -30,13 +30,21 @@ $font-weight-bold: bold;
  * =================================
  */
 
+$jedi-white: #ffffff;
 $jedi-black: #000201;
 $jedi-magenta: #8c1186;
 $jedi-blue: #0011a5;
 $jedi-green: #012e20;
 $jedi-dark-blue: #09072c;
 
-$jedi-button-gradient: linearGradient(95.64deg, #29aafd 8.08%, #ff00e9 105.91%);
+$jedi-pink: #ff00e9;
+$jedi-light-blue: #29aafd;
+
+$jedi-button-gradient: linearGradient(
+  95.64deg,
+  $jedi-light-blue 8.08%,
+  $jedi-pink 105.91%
+);
 
 /**
  * Z-index variables
