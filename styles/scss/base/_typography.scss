@@ -1,3 +1,5 @@
 h1 {
-  font-family: "Avenir LT Std", "DM Sans", sans-serif;
+  font-family: $font-family-primary;
+  font-size: $font-size-base * 3.2;
+  color: $jedi-magenta;
 }
