@@ -1,0 +1,36 @@
+button {
+  font-family: $font-family-primary;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  display: block;
+  color: $jedi-white;
+
+  &.primary-button {
+    background: $jedi-button-gradient;
+    font-size: $font-size-base * 1.2;
+    font-weight: $font-weight-bold;
+    line-height: 100%;
+    padding: 20px 98px;
+    border-radius: 8px;
+
+    &:hover,
+    &:active {
+      background: $jedi-button-gradient-reverse;
+    }
+
+    &.small-fonts {
+      font-size: $font-size-base;
+    }
+  }
+
+  &.secondary-button {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 20px 16px;
+    font-size: 22px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: $font-weight-bold;
+  }
+}
