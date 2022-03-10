@@ -19,6 +19,7 @@ $font-size-base: 20px;
 $font-size-rem: calc(($font-size-base / 16px) * 1rem);
 
 $leading-base: 1.2;
+$leading-base-in-percent: (1.2 * 100) * 1%;
 $line-height-base: round($font-size-base * $leading-base); // 20 * 1.2
 $baseline: $line-height-base * 1px;
 
@@ -40,10 +41,16 @@ $jedi-dark-blue: #09072c;
 $jedi-pink: #ff00e9;
 $jedi-light-blue: #29aafd;
 
-$jedi-button-gradient: linearGradient(
+$jedi-button-gradient: linear-gradient(
   95.64deg,
   $jedi-light-blue 8.08%,
   $jedi-pink 105.91%
+);
+
+$jedi-button-gradient-reverse: linear-gradient(
+  95.64deg,
+  $jedi-pink 8.08%,
+  $jedi-light-blue 105.91%
 );
 
 /**

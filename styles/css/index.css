@@ -34,6 +34,7 @@ body {
   color: #ffffff;
   min-height: 100vh;
   background-color: #09072c;
+  line-height: 120%;
 }
 
 h1, h5, h4, h3, h2 {
@@ -73,6 +74,29 @@ body {
 
 button {
   user-select: none;
+}
+
+button {
+  font-family: "Avenir LT Std", "DM Sans", sans-serif;
+  cursor: pointer;
+  border: none;
+}
+button.primary-button {
+  background: linear-gradient(95.64deg, #29aafd 8.08%, #ff00e9 105.91%);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 100%;
+  text-align: center;
+  padding: 20px 98px;
+  border-radius: 8px;
+  color: #ffffff;
+  display: block;
+}
+button.primary-button:hover, button.primary-button:active {
+  background: linear-gradient(95.64deg, #ff00e9 8.08%, #29aafd 105.91%);
+}
+button.primary-button.small-fonts {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
