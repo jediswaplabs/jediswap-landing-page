@@ -21,10 +21,58 @@
  * Z-index variables
  * =================================
  */
-h1 {
+html {
+  font-variant: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
   font-family: "Avenir LT Std", "DM Sans", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  min-height: 100vh;
+  background-color: #09072c;
+}
+
+h1, h5, h4, h3, h2 {
   font-size: 64px;
-  color: #8c1186;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 54px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  user-select: none;
 }
 
 /*# sourceMappingURL=index.css.map */
