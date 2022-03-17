@@ -22,6 +22,11 @@ button {
     &.small-fonts {
       font-size: $font-size-base;
     }
+
+    &.icon-button {
+      padding: 4px 16px;
+      @include flex(row, center, center, 14px);
+    }
   }
 
   &.secondary-button {

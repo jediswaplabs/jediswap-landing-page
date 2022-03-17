@@ -98,6 +98,14 @@ button.primary-button:hover, button.primary-button:active {
 button.primary-button.small-fonts {
   font-size: 20px;
 }
+button.primary-button.icon-button {
+  padding: 4px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 14pxpx;
+}
 button.secondary-button {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 6px;
@@ -106,6 +114,42 @@ button.secondary-button {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  max-height: 76px;
+  width: 100%;
+  padding: 20px 160px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+header .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 43px;
+}
+header p {
+  text-transform: uppercase;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+header::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(226, 0, 255, 0.3) -0.73%, rgba(75, 212, 255, 0.3) 100%);
 }
 
 /*# sourceMappingURL=index.css.map */
