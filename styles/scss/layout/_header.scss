@@ -12,10 +12,10 @@ header {
   }
 
   p {
-    text-transform: uppercase;
-    font-family: $font-family-clash;
+    text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 1px;
+    font-size: 20px;
   }
 
   &::after {

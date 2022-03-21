@@ -23,9 +23,8 @@ button {
       font-size: $font-size-base;
     }
 
-    &.icon-button {
-      padding: 4px 16px;
-      @include flex(row, center, center, 14px);
+    &.header-button {
+      padding: 9px 28px;
     }
   }
 

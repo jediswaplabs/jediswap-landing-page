@@ -98,13 +98,8 @@ button.primary-button:hover, button.primary-button:active {
 button.primary-button.small-fonts {
   font-size: 20px;
 }
-button.primary-button.icon-button {
-  padding: 4px 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 14pxpx;
+button.primary-button.header-button {
+  padding: 9px 28px;
 }
 button.secondary-button {
   background: rgba(255, 255, 255, 0.2);
@@ -137,10 +132,10 @@ header .right {
   gap: 43px;
 }
 header p {
-  text-transform: uppercase;
-  font-family: "Clash Display", sans-serif;
+  text-transform: capitalize;
   font-weight: 600;
   letter-spacing: 1px;
+  font-size: 20px;
 }
 header::after {
   content: "";
