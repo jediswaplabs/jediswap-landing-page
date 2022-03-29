@@ -22,6 +22,10 @@ button {
     &.small-fonts {
       font-size: $font-size-base;
     }
+
+    &.header-button {
+      padding: 9px 28px;
+    }
   }
 
   &.secondary-button {
