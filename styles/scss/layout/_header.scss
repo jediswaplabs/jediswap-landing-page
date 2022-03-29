@@ -1,9 +1,9 @@
-header {
+header.main-header {
   position: fixed;
   top: 0;
   max-height: 76px;
   width: 100%;
-  padding: 20px 160px;
+  padding: 22px 160px;
   background: transparent;
   @include flex(row, space-between, center);
 
