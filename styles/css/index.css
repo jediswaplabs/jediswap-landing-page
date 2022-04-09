@@ -104,15 +104,82 @@ button.primary-button.header-button {
 button.secondary-button {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 6px;
-  padding: 20px 16px;
+  padding: 10px 16px;
   font-size: 22px;
   line-height: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
 }
 
 .image-wrapper-div {
   line-height: 0;
+}
+
+.main-container {
+  position: absolute;
+  padding: 0px 160px;
+  top: 76px;
+}
+
+.contributor-section {
+  display: grid;
+  grid-template-columns: 6.5fr 3.5fr;
+  padding-top: 100px;
+}
+.contributor-section h2 {
+  margin-bottom: 60px;
+  font-weight: 800;
+}
+.contributor-section h3 {
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0.3137254902), rgba(255, 255, 255, 0.062745098)) 1;
+}
+.contributor-section h4 {
+  margin: 20px 0px;
+  font-size: 22px;
+}
+.contributor-section p {
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contributor-description p {
+  margin-bottom: 60px;
+}
+
+.unique-benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 20px;
+}
+
+.join-discord {
+  min-height: 186px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(91.34deg, rgba(0, 17, 165, 0.5) 0%, rgba(170, 174, 209, 0.5) 13.29%, rgba(255, 255, 255, 0.5) 52.73%, rgba(213, 162, 210, 0.5) 88.55%, rgba(140, 17, 134, 0.5) 99.66%) 1;
+  box-shadow: 2px 16px 19px 0px rgba(0, 0, 0, 0.0901960784);
+  background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(189, 35, 182, 0.2) 0%, rgba(26, 121, 185, 0.0447917) 77.08%, rgba(0, 17, 165, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.join-discord p {
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+.image-column {
+  display: flex;
+  align-items: center;
+}
+
+.section-2 {
+  min-height: 100vh;
 }
 
 header.main-header {

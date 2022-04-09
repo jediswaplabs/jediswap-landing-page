@@ -1,3 +1,90 @@
 .image-wrapper-div {
   line-height: 0;
 }
+
+// -------------- CSS for become-a-contributor section -----------------------
+
+.main-container {
+  position: absolute;
+  padding: 0px 160px;
+  top: 76px;
+}
+
+.contributor-section {
+  display: grid;
+  grid-template-columns: 6.5fr 3.5fr;
+  padding-top: 100px;
+
+  h2 {
+    margin-bottom: 60px;
+    font-weight: 800;
+  }
+  h3 {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #ffffff50, #ffffff10) 1;
+  }
+  h4 {
+    margin: 20px 0px;
+    font-size: 22px;
+  }
+  p {
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.contributor-description {
+  p {
+    margin-bottom: 60px;
+  }
+}
+
+.unique-benefit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 20px;
+}
+
+.join-discord {
+  min-height: 186px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      91.34deg,
+      rgba(0, 17, 165, 0.5) 0%,
+      rgba(170, 174, 209, 0.5) 13.29%,
+      rgba(255, 255, 255, 0.5) 52.73%,
+      rgba(213, 162, 210, 0.5) 88.55%,
+      rgba(140, 17, 134, 0.5) 99.66%
+    )
+    1;
+  box-shadow: 2px 16px 19px 0px #00000017;
+  background: radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(189, 35, 182, 0.2) 0%,
+      rgba(26, 121, 185, 0.0447917) 77.08%,
+      rgba(0, 17, 165, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  p {
+    font-size: 24px;
+    margin-top: 0px;
+  }
+}
+
+.image-column {
+  display: flex;
+  align-items: center;
+}
+.section-2 {
+  min-height: 100vh;
+}
