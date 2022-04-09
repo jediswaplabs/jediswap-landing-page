@@ -1,7 +1,17 @@
 .part2 {
-  display: flex;
+  //   display: flex;
   position: relative;
   overflow-x: clip;
+
+  .header {
+    font-family: $font-family-secondary;
+    font-size: 3.375rem;
+    font-weight: 800;
+    line-height: 54px;
+    // letter-spacing: 0em;
+    text-align: center;
+    padding-top: 5rem;
+  }
 
   .bg {
     position: absolute;
@@ -14,7 +24,7 @@
   }
   .center {
     position: relative;
-    top: 150px;
+    top: -100px;
     left: 250px;
 
     .two {

@@ -152,9 +152,16 @@ header.main-header::after {
 }
 
 .part2 {
-  display: flex;
   position: relative;
   overflow-x: clip;
+}
+.part2 .header {
+  font-family: "DM Sans", sans-serif;
+  font-size: 3.375rem;
+  font-weight: 800;
+  line-height: 54px;
+  text-align: center;
+  padding-top: 5rem;
 }
 .part2 .bg {
   position: absolute;
@@ -167,7 +174,7 @@ header.main-header::after {
 }
 .part2 .center {
   position: relative;
-  top: 150px;
+  top: -100px;
   left: 250px;
 }
 .part2 .center .two {
