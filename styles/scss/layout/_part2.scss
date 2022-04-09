@@ -1,0 +1,40 @@
+.part2 {
+  display: flex;
+  position: relative;
+  overflow-x: clip;
+
+  .bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+  .center > img {
+    width: 360px;
+    height: 415px;
+  }
+  .center {
+    position: relative;
+    top: 150px;
+    left: 250px;
+
+    .two {
+      position: relative;
+      top: 30px;
+    }
+    .three {
+      position: relative;
+      right: 320px;
+    }
+
+    .one {
+      position: relative;
+      top: 73px;
+      right: 140px;
+    }
+    .four {
+      position: relative;
+      top: 90px;
+      right: 490px;
+    }
+  }
+}

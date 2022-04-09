@@ -151,4 +151,42 @@ header.main-header::after {
   background: linear-gradient(90deg, rgba(226, 0, 255, 0.3) -0.73%, rgba(75, 212, 255, 0.3) 100%);
 }
 
+.part2 {
+  display: flex;
+  position: relative;
+  overflow-x: clip;
+}
+.part2 .bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+.part2 .center > img {
+  width: 360px;
+  height: 415px;
+}
+.part2 .center {
+  position: relative;
+  top: 150px;
+  left: 250px;
+}
+.part2 .center .two {
+  position: relative;
+  top: 30px;
+}
+.part2 .center .three {
+  position: relative;
+  right: 320px;
+}
+.part2 .center .one {
+  position: relative;
+  top: 73px;
+  right: 140px;
+}
+.part2 .center .four {
+  position: relative;
+  top: 90px;
+  right: 490px;
+}
+
 /*# sourceMappingURL=index.css.map */
