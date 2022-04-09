@@ -161,12 +161,12 @@ header.main-header::after {
   gap: 0px;
   position: relative;
 }
-#part1 .bg_ellipses {
+#part1 .hero_bg {
   position: absolute;
-  width: 100%;
-  top: 173px;
-  height: 1283px;
   z-index: -1;
+  width: 100%;
+  height: auto;
+  top: -80px;
 }
 #part1 .header {
   font-weight: 800;
@@ -194,41 +194,26 @@ header.main-header::after {
   align-items: center;
   gap: 100px;
 }
-#part1 .orbits {
+#part1 .stats {
   position: relative;
-}
-#part1 .orbits .eth {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  margin: auto;
-  z-index: 1;
-}
-#part1 .orbits .ellipse {
-  z-index: 0;
-}
-#part1 .border .stats {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 60px;
+  margin-top: 800px;
   width: 1120px;
   max-width: 100vw;
   padding: 4rem 0;
-  background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(189, 35, 182, 0.2) 0%, rgba(26, 121, 185, 0.0447917) 77.08%, rgba(0, 17, 165, 0) 100%);
-  opacity: 0.7;
-  filter: drop-shadow(2px 16px 19px rgba(0, 0, 0, 0.09));
-  border-radius: 8px;
-  border: 1px solid grey;
   text-align: center;
 }
-#part1 .border .stats p {
+#part1 .stats .stats-bg {
+  position: absolute;
+}
+#part1 .stats p {
   margin: 0;
 }
-#part1 .border .stats .data {
+#part1 .stats .data {
   color: #ffffff;
   font-size: 1.875rem;
   margin-bottom: 0.25rem;
@@ -236,7 +221,7 @@ header.main-header::after {
   font-weight: 700;
   line-height: 100%;
 }
-#part1 .border .stats .desc {
+#part1 .stats .desc {
   font-family: "DM Sans", sans-serif;
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.8);
