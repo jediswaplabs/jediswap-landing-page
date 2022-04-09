@@ -123,10 +123,11 @@ button.secondary-button {
 
 .section3-container {
   min-height: 80vh;
-  background: radial-gradient(circle farthest-side at center, rgba(255, 40, 244, 0.5411764706), rgba(6, 12, 61, 0.8901960784), transparent);
+  background: radial-gradient(circle farthest-side at center, #ff28f48a, #060c3de3, transparent);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .section3-container h2 {
   margin: 0px 0px 108px 0px;
@@ -175,6 +176,69 @@ header.main-header::after {
   bottom: 0;
   left: 0;
   background: linear-gradient(90deg, rgba(226, 0, 255, 0.3) -0.73%, rgba(75, 212, 255, 0.3) 100%);
+}
+
+footer {
+  background-color: #000000;
+  margin-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+footer .center {
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 166px;
+}
+footer .center .logo {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0px;
+}
+footer .center .logo .social {
+  margin-right: 1.25rem;
+}
+footer .center .logo .rights {
+  margin-bottom: 0;
+}
+footer .center .logo .blur {
+  opacity: 0.6;
+}
+footer .center .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 86px;
+}
+footer .center .row .header {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 1.875rem;
+  text-align: left;
+}
+footer .center .row .link {
+  all: unset;
+  display: block;
+  font-family: "Avenir LT Std", "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: left;
+  margin: 0;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+footer .center .row .link :hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
