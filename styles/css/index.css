@@ -169,8 +169,7 @@ header.main-header::after {
   width: 100%;
 }
 .part2 .center > img {
-  width: 360px;
-  height: 415px;
+  max-width: 1300px;
 }
 .part2 .center {
   position: relative;
