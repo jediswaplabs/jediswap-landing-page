@@ -3,6 +3,9 @@
   position: relative;
   overflow-x: clip;
 
+  .cards {
+    width: 80%;
+  }
   .header {
     font-family: $font-family-secondary;
     font-size: 3.375rem;
@@ -11,6 +14,7 @@
     // letter-spacing: 0em;
     text-align: center;
     padding-top: 5rem;
+    margin: 0;
   }
 
   .bg {
@@ -18,33 +22,35 @@
     z-index: -1;
     width: 100%;
   }
-  .center > img {
-    max-width: 1300px;
-    // height: 415px;
-  }
+  // .center > img {
+  //   max-width: 1300px;
+  //   // height: 415px;
+  // }
   .center {
-    position: relative;
-    top: -100px;
-    left: 250px;
+    @include flex(column, center, center);
+    height: 100%;
+    // position: relative;
+    // top: -100px;
+    // left: 250px;
 
-    .two {
-      position: relative;
-      top: 30px;
-    }
-    .three {
-      position: relative;
-      right: 320px;
-    }
+    // .two {
+    //   position: relative;
+    //   top: 30px;
+    // }
+    // .three {
+    //   position: relative;
+    //   right: 320px;
+    // }
 
-    .one {
-      position: relative;
-      top: 73px;
-      right: 140px;
-    }
-    .four {
-      position: relative;
-      top: 90px;
-      right: 490px;
-    }
+    // .one {
+    //   position: relative;
+    //   top: 73px;
+    //   right: 140px;
+    // }
+    // .four {
+    //   position: relative;
+    //   top: 90px;
+    //   right: 490px;
+    // }
   }
 }
