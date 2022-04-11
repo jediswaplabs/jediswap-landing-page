@@ -183,6 +183,7 @@ footer {
   margin-top: 5rem;
   padding-top: 4rem;
   padding-bottom: 2rem;
+  font-family: "DM Sans", sans-serif;
 }
 footer .center {
   margin: auto;
@@ -218,7 +219,6 @@ footer .center .row {
   gap: 86px;
 }
 footer .center .row .header {
-  font-family: "DM Sans", sans-serif;
   font-size: 1.375rem;
   font-weight: 800;
   margin: 0;
@@ -228,13 +228,12 @@ footer .center .row .header {
 footer .center .row .link {
   all: unset;
   display: block;
-  font-family: "Avenir LT Std", "DM Sans", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   text-align: left;
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 15px;
   cursor: pointer;
 }
 footer .center .row .link :hover {
