@@ -115,6 +115,32 @@ button.secondary-button {
   line-height: 0;
 }
 
+.main-container {
+  padding: 0px 160px;
+  top: 76px;
+  position: relative;
+}
+
+.section3-container {
+  min-height: 80vh;
+  background: radial-gradient(circle farthest-side at center, rgba(255, 40, 244, 0.5411764706), rgba(6, 12, 61, 0.8901960784), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section3-container h2 {
+  margin: 0px 0px 108px 0px;
+  line-height: 1;
+  text-align: center;
+}
+
+.backers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 60px;
+  justify-items: center;
+}
+
 header.main-header {
   position: fixed;
   top: 0;
