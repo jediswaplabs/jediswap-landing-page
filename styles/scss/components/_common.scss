@@ -4,12 +4,6 @@
 
 // -------------- CSS for become-a-contributor section -----------------------
 
-.main-container {
-  position: absolute;
-  padding: 0px 160px;
-  top: 76px;
-}
-
 .contributor-section {
   display: grid;
   grid-template-columns: 6.5fr 3.5fr;
@@ -88,3 +82,56 @@
 .section-2 {
   min-height: 100vh;
 }
+// CSS for section 3 --> Our Backers
+
+.main-container {
+  padding: 0px 160px;
+  top: 76px;
+  position: relative;
+}
+
+.section3-container {
+  // padding: 15% 15%;
+  min-height: 80vh;
+  // width: 60vw;
+  background: radial-gradient(
+    circle farthest-side at center,
+    #ff28f48a,
+    #060c3de3,
+    transparent
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  h2 {
+    margin: 0px 0px 108px 0px;
+    line-height: 1;
+    text-align: center;
+  }
+}
+.backers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 60px;
+  justify-items: center;
+}
+
+// @media screen and (max-width: 768px) {
+// 	.main-container {
+// 		padding: 0px 20px;
+// 	}
+// 	.section3-container {
+// 		background: radial-gradient(circle farthest-side at center, #ff28f48a, #060c3de3, transparent);
+
+// 		h2 {
+// 			margin-block-end: 1em;
+// 		}
+// 	}
+// 	.backers-grid {
+// 		display: grid;
+// 		grid-template-columns: 1fr 1fr;
+// 		grid-row-gap: 3em;
+// 	}
+// }
