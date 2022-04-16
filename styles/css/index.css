@@ -166,7 +166,7 @@ header.main-header::after {
   z-index: -1;
   width: 100%;
   height: auto;
-  top: -80px;
+  top: -10px;
 }
 #part1 .header {
   font-weight: 800;
