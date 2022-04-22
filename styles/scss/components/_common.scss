@@ -1,8 +1,6 @@
 .image-wrapper-div {
-	line-height: 0;
+  line-height: 0;
 }
-
-// CSS for section 3 --> Our Backers
 
 .main-container {
   padding: 0px 160px;
@@ -10,10 +8,10 @@
   position: relative;
 }
 
-.section3-container {
-  // padding: 15% 15%;
+// <-----------------------------  CSS for Backers section  ----------------------------->
+
+.backers-section {
   min-height: 80vh;
-  // width: 60vw;
   background: radial-gradient(
     circle farthest-side at center,
     #ff28f48a,
@@ -25,33 +23,101 @@
   justify-content: center;
   overflow: hidden;
 
-  h2 {
+  &__title {
     margin: 0px 0px 108px 0px;
     line-height: 1;
     text-align: center;
   }
-}
-.backers-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 60px;
-  justify-items: center;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 60px;
+    justify-items: center;
+  }
 }
 
-// @media screen and (max-width: 768px) {
-// 	.main-container {
-// 		padding: 0px 20px;
-// 	}
-// 	.section3-container {
-// 		background: radial-gradient(circle farthest-side at center, #ff28f48a, #060c3de3, transparent);
+// <-----------------------  CSS for become-a-contributor section  ----------------------->
 
-// 		h2 {
-// 			margin-block-end: 1em;
-// 		}
-// 	}
-// 	.backers-grid {
-// 		display: grid;
-// 		grid-template-columns: 1fr 1fr;
-// 		grid-row-gap: 3em;
-// 	}
-// }
+.contributor-section {
+  padding: 100px 0px;
+
+  &__details {
+    display: grid;
+    grid-template-columns: 6.5fr 3.5fr;
+  }
+
+  &__image-details {
+    display: flex;
+    align-items: center;
+  }
+
+  &__cta {
+    min-height: 186px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+        91.34deg,
+        rgba(0, 17, 165, 0.5) 0%,
+        rgba(170, 174, 209, 0.5) 13.29%,
+        rgba(255, 255, 255, 0.5) 52.73%,
+        rgba(213, 162, 210, 0.5) 88.55%,
+        rgba(140, 17, 134, 0.5) 99.66%
+      )
+      1;
+    box-shadow: 2px 16px 19px 0px #00000017;
+    background: radial-gradient(
+        90.16% 143.01% at 15.32% 21.04%,
+        rgba(189, 35, 182, 0.2) 0%,
+        rgba(26, 121, 185, 0.0447917) 77.08%,
+        rgba(0, 17, 165, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    p {
+      font-size: 24px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.description {
+  &__tile {
+    margin-bottom: 60px;
+    font-weight: 800;
+  }
+  &__para {
+    margin-bottom: 60px;
+  }
+}
+
+.unique-benefits {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 20px;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #ffffff50, #ffffff10) 1;
+  }
+
+  &__heading {
+    margin: 20px 0px;
+    font-size: 22px;
+  }
+
+  &__para {
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
