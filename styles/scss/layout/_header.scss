@@ -5,6 +5,7 @@ header.main-header {
   width: 100%;
   padding: 22px 160px;
   background: transparent;
+  z-index: 100;
   @include flex(row, space-between, center);
 
   .right {
