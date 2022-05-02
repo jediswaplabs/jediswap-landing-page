@@ -1,5 +1,5 @@
 .section5 {
-  background: var(--bg);
+  // background: var(--bg);
   color: var(--text-color);
   position: relative;
   overflow-x: hidden;
@@ -30,7 +30,7 @@
   
   .frequentlyWrapper {
     margin: auto;
-    padding-top:167px;
+    padding-top:67px;
     gap: 100px;
     max-width: 1120px;
     @include flex(column, center, center);
@@ -96,18 +96,20 @@
 
   .more {
     margin: auto;
-    display: flex;
+    flex-direction: row;
     margin-top: 5rem;
     gap: 50px;
     width: 1112px;
-    height: 116px;
-    align-items: center;
-    justify-content: center;
+    padding: 2.25rem 0;
+    min-height: unset;
+    // height: 116px;
+    // align-items: center;
+    // justify-content: center;
 
     p {
       font-weight: 400;
       font-size: 1.5rem;
-     
+      margin: 0;
     }
 
     .button{
