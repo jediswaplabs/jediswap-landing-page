@@ -1,0 +1,59 @@
+footer {
+  background-color: $jedi-footer-black;
+  margin-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-family: $font-family-secondary;
+
+  & .center {
+    margin: auto;
+    width: fit-content;
+    @include flex(row, center, center, 166);
+
+    .logo {
+      align-self: stretch;
+      @include flex(column, space-between, flex-start);
+
+      .social {
+        // all: unset;
+        margin-right: 1.25rem;
+      }
+
+      .rights {
+        margin-bottom: 0;
+      }
+
+      .blur {
+        opacity: 0.6;
+      }
+    }
+
+    & .row {
+      @include flex(row, center, start, 86);
+
+      & .header { 
+        font-size: 1.375rem;
+        font-weight: 800;
+        margin: 0;
+        margin-bottom: 1.875rem;
+        text-align: left;
+      }
+
+      & .link {
+        all: unset;
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+        text-align: left;
+        margin: 0;
+        margin-top: 15px;
+        cursor: pointer;
+
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
