@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.cdnfonts.com/css/avenir-lt-std");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 /**
@@ -29,7 +30,7 @@ html {
 }
 
 body {
-  font-family: "Avenir LT Std", "DM Sans", sans-serif;
+  font-family: "Avenir LT Std", sans-serif;
   font-size: 20px;
   color: #ffffff;
   min-height: 100vh;
@@ -77,7 +78,7 @@ button {
 }
 
 button {
-  font-family: "Avenir LT Std", "DM Sans", sans-serif;
+  font-family: "Avenir LT Std", sans-serif;
   cursor: pointer;
   border: none;
   text-align: center;
@@ -294,6 +295,123 @@ footer .center .row .link {
 }
 footer .center .row .link :hover {
   cursor: pointer;
+}
+
+.section5 {
+  color: var(--text-color);
+  position: relative;
+  overflow-x: hidden;
+}
+.section5 .pinkGradient {
+  height: 725px;
+  width: 781px;
+  position: absolute;
+  z-index: -1;
+  right: -79px;
+  top: -72px;
+  background: linear-gradient(179.96deg, rgba(140, 17, 134, 0.8) 0.03%, rgba(140, 17, 134, 0) 114.3%);
+  mix-blend-mode: normal;
+  filter: blur(522px);
+}
+.section5 .blueGradient {
+  height: 692px;
+  width: 747px;
+  left: 47px;
+  top: 36px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(0, 17, 165, 0.8) 0%, rgba(0, 17, 165, 0) 100%);
+  mix-blend-mode: normal;
+  filter: blur(522px);
+}
+.section5 .frequentlyWrapper {
+  margin: auto;
+  padding-top: 67px;
+  gap: 100px;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.section5 .frequentlyWrapper .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.section5 .frequentlyWrapper .heading {
+  font-size: 3.375rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+.section5 .frequentlyWrapper .collapsible {
+  font-family: "Avenir LT Std", sans-serif;
+  background-color: #000201;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 25px 30px 25px 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.875rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #4498DF;
+}
+.section5 .frequentlyWrapper .collapsible:after {
+  content: "˅";
+  font-weight: normal;
+  font-size: 1.3rem;
+  float: right;
+  background: linear-gradient(180deg, #0011A5 0%, #8C1186 100%);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.section5 .frequentlyWrapper .active:after {
+  content: "˄";
+}
+.section5 .frequentlyWrapper .content {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  padding: 0px 60px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background: rgba(255, 255, 255, 0.15);
+  max-width: 90%;
+  margin: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+.section5 .more {
+  margin: auto;
+  flex-direction: row;
+  margin-top: 5rem;
+  gap: 50px;
+  width: 1112px;
+  padding: 2.25rem 0;
+  min-height: unset;
+}
+.section5 .more p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.section5 .more .button {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.375rem;
 }
 
 .part2 {
