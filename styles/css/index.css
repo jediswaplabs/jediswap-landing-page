@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.cdnfonts.com/css/avenir-lt-std");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 /**
@@ -437,14 +436,16 @@ footer .center .row .link :hover {
   font-weight: 400;
   font-size: 1.875rem;
   border-radius: 15px;
-  box-shadow: 0px 0px 10px #4498DF;
+  box-shadow: 0px 0px 10px #4498df;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
-.section5 .frequentlyWrapper .collapsible:after {
-  content: "˅";
-  font-weight: normal;
-  font-size: 1.3rem;
-  float: right;
-  background: linear-gradient(180deg, #0011A5 0%, #8C1186 100%);
+.section5 .frequentlyWrapper .collapsible__title {
+  flex: 1;
+}
+.section5 .frequentlyWrapper .collapsible__arrow-button {
+  background: linear-gradient(180deg, #0011a5 0%, #8c1186 100%);
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
@@ -453,9 +454,6 @@ footer .center .row .link :hover {
   justify-content: center;
   align-items: center;
   gap: 0px;
-}
-.section5 .frequentlyWrapper .active:after {
-  content: "˄";
 }
 .section5 .frequentlyWrapper .content {
   font-size: 18px;
