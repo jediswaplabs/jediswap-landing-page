@@ -121,3 +121,27 @@
     color: rgba(255, 255, 255, 0.8);
   }
 }
+
+.final-cta-section {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.final-cta-section .bg {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+}
+
+.front-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-weight: 900;
+  }
+}
