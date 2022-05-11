@@ -198,6 +198,30 @@ button.secondary-button {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.final-cta-section {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-cta-section .bg {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+}
+
+.front-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.front-content h2 {
+  font-weight: 900;
+}
+
 header.main-header {
   position: absolute;
   top: 0;
@@ -237,7 +261,6 @@ header.main-header::after {
 
 footer {
   background-color: #000000;
-  margin-top: 5rem;
   padding-top: 4rem;
   padding-bottom: 2rem;
   font-family: "DM Sans", sans-serif;

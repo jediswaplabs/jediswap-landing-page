@@ -1,6 +1,6 @@
 footer {
   background-color: $jedi-footer-black;
-  margin-top: 5rem;
+  // margin-top: 5rem;
   padding-top: 4rem;
   padding-bottom: 2rem;
   font-family: $font-family-secondary;
@@ -31,7 +31,7 @@ footer {
     & .row {
       @include flex(row, center, start, 86);
 
-      & .header { 
+      & .header {
         font-size: 1.375rem;
         font-weight: 800;
         margin: 0;
