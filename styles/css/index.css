@@ -26,6 +26,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -224,12 +225,12 @@ button.secondary-button {
 }
 
 header.main-header {
-  position: absolute;
+  position: sticky;
   top: 0;
   max-height: 76px;
   width: 100%;
   padding: 22px 160px;
-  background: transparent;
+  background-color: #09072c;
   z-index: 100;
   display: flex;
   flex-direction: row;
@@ -321,7 +322,7 @@ footer .center .row .link :hover {
   cursor: pointer;
 }
 
-#part1 {
+.section1 {
   margin-top: 76px;
   display: flex;
   flex-direction: column;
@@ -330,24 +331,24 @@ footer .center .row .link :hover {
   gap: 0px;
   position: relative;
 }
-#part1 .hero_bg {
+.section1 .hero_bg {
   position: absolute;
   z-index: -1;
   width: 100%;
   height: auto;
   top: -10px;
 }
-#part1 .header {
+.section1 .header {
   font-weight: 800;
   font-size: 4rem;
   line-height: 76px;
   text-align: center;
   margin: 7.75rem 0 0;
 }
-#part1 .header .pink {
+.section1 .header .pink {
   color: #ff00e9;
 }
-#part1 .desc {
+.section1 .desc {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-size: 1.25rem;
@@ -355,7 +356,7 @@ footer .center .row .link :hover {
   line-height: 1.87rem;
   margin: 3rem;
 }
-#part1 .logos {
+.section1 .logos {
   margin-top: 5rem;
   display: flex;
   flex-direction: row;
@@ -363,7 +364,7 @@ footer .center .row .link :hover {
   align-items: center;
   gap: 100px;
 }
-#part1 .stats {
+.section1 .stats {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -376,13 +377,13 @@ footer .center .row .link :hover {
   padding: 4rem 0;
   text-align: center;
 }
-#part1 .stats .stats-bg {
+.section1 .stats .stats-bg {
   position: absolute;
 }
-#part1 .stats p {
+.section1 .stats p {
   margin: 0;
 }
-#part1 .stats .data {
+.section1 .stats .data {
   color: #ffffff;
   font-size: 2rem;
   margin-bottom: 0.25rem;
@@ -390,7 +391,7 @@ footer .center .row .link :hover {
   font-weight: 700;
   line-height: 100%;
 }
-#part1 .stats .desc {
+.section1 .stats .desc {
   font-family: "DM Sans", sans-serif;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
