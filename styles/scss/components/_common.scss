@@ -87,9 +87,10 @@
 }
 
 .description {
-  &__tile {
+  &__title {
     margin-bottom: 60px;
-    font-weight: 800;
+    font-weight: 700;
+    line-height: 100%;
   }
   &__para {
     margin-bottom: 60px;

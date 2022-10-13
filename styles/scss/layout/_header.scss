@@ -1,10 +1,10 @@
 header.main-header {
-  position: absolute;
+  position: sticky;
   top: 0;
   max-height: 76px;
   width: 100%;
   padding: 22px 160px;
-  background: transparent;
+  background-color: $jedi-dark-blue;
   z-index: 100;
   @include flex(row, space-between, center);
 

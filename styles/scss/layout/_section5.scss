@@ -4,44 +4,52 @@
   position: relative;
   overflow-x: hidden;
 
-  .pinkGradient{
+  .pinkGradient {
     height: 725px;
     width: 781px;
     position: absolute;
     z-index: -1;
     right: -79px;
     top: -72px;
-    background: linear-gradient(179.96deg, rgba(140, 17, 134, 0.8) 0.03%, rgba(140, 17, 134, 0) 114.3%);
+    background: linear-gradient(
+      179.96deg,
+      rgba(140, 17, 134, 0.8) 0.03%,
+      rgba(140, 17, 134, 0) 114.3%
+    );
     mix-blend-mode: normal;
     filter: blur(522px);
   }
 
-  .blueGradient{
+  .blueGradient {
     height: 692px;
     width: 747px;
     left: 47px;
     top: 36px;
     position: absolute;
     z-index: -1;
-    background: linear-gradient(180deg, rgba(0, 17, 165, 0.8) 0%, rgba(0, 17, 165, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 17, 165, 0.8) 0%,
+      rgba(0, 17, 165, 0) 100%
+    );
     mix-blend-mode: normal;
     filter: blur(522px);
   }
-  
+
   .frequentlyWrapper {
     margin: auto;
-    padding-top:67px;
+    padding-top: 67px;
     gap: 100px;
     max-width: 1120px;
     @include flex(column, center, center);
 
-    .col{
+    .col {
       @include flex(column, center, center, 30);
     }
     .heading {
       //   @include heading;
       font-size: 3.375rem;
-      font-weight: 400;
+      font-weight: 700;
       line-height: 100%;
     }
 
@@ -57,26 +65,38 @@
       font-weight: 400;
       font-size: 1.875rem;
       border-radius: 15px;
-      box-shadow: 0px 0px 10px #4498DF;
+      box-shadow: 0px 0px 10px #4498df;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+
+      &__title {
+        flex: 1
+      }
+
+      &__arrow-button {
+        background: linear-gradient(180deg, #0011a5 0%, #8c1186 100%);
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        @include flex(column, center, center);
+      }
     }
 
-    .collapsible:after {
-      content: "\02C5";
-      font-weight: normal;
-      font-size: 1.3rem;
-      float: right;
-      background: linear-gradient(180deg, #0011A5 0%, #8C1186 100%);
-      border-radius: 50%;
-      // padding: 0.5rem 0.75rem;
-      width: 2rem;
-      height: 2rem;
-      @include flex(column, center, center);
+    // .collapsible:after {
+    //   content: "\02C5";
+    //   font-weight: normal;
+    //   font-size: 1.3rem;
+    //   float: right;
+    //   background: linear-gradient(180deg, #0011A5 0%, #8C1186 100%);
+    //   border-radius: 50%;
+    //   // padding: 0.5rem 0.75rem;
 
-    }
-   
-    .active:after {
-      content: "\02C4";
-    }
+    // }
+
+    // .active:after {
+    //   content: "\02C4";
+    // }
 
     .content {
       font-size: 18px;
@@ -112,7 +132,7 @@
       margin: 0;
     }
 
-    .button{
+    .button {
       background: rgba(255, 255, 255, 0.2);
       border-radius: 6px;
       padding: 0.5rem 1.5rem;

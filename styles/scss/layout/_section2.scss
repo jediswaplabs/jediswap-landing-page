@@ -2,7 +2,11 @@
   //   display: flex;
   position: relative;
   overflow-x: clip;
-  margin-bottom: 14rem;
+  padding-bottom: 14rem;
+  background-color: rgba(10,8,45, 0.5);
+  mix-blend-mode: normal;
+  box-shadow: 0px -4px 40px rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
 
   .cards {
     width: 80%;
