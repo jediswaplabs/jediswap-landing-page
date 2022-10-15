@@ -1,0 +1,41 @@
+.stats-wrapper {
+  width: 100%;
+  @include flex(row, center, center, 100);
+}
+
+.stats {
+    position: relative;
+    @include flex(row, center, center, 100);
+    width: 77%;
+    padding: 5rem 0;
+    text-align: center;
+    background: url("../../assets/images/stats.svg") no-repeat;
+    background-size: cover;
+    aspect-ratio: 1120 / 186;
+    margin-bottom: 160px;
+
+
+    .stats-bg {
+      position: absolute;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .data {
+      color: $jedi-white;
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+      font-family: $font-family-primary;
+      font-weight: 700;
+      line-height: 100%;
+    }
+    .desc {
+      font-family: $font-family-secondary;
+      font-size: 1rem;
+      color: $jedi-desc-text;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }

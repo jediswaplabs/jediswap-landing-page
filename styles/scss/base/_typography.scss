@@ -1,3 +1,45 @@
+html {
+  font-variant: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-base; // 20px
+  color: $jedi-white;
+  min-height: 100vh;
+  background-color: $jedi-dark-blue;
+  line-height: $leading-base-in-percent;
+}
+
 h1 {
-  font-family: "Avenir LT Std", "DM Sans", sans-serif;
+  font-size: $font-size-base * 3.2; // 20 * 3.2 = 64px
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  @extend h1;
+  font-size: $font-size-base * 2.7; // 20 * 2.7 = 54px
+}
+
+h3 {
+  @extend h1;
+  font-size: $font-size-base * 1.5; // 20 * 1.5 = 30px
+}
+
+h4 {
+  @extend h1;
+  font-size: $font-size-base * 1.4; // 20 * 1.4 = 28px
+}
+
+h5 {
+  @extend h1;
+  font-size: $font-size-base * 1.2; // 20 * 1.2 = 24px
+}
+
+p {
+  font-size: $font-size-base * 0.9; // 20 * 0.9 =18px
 }
