@@ -1,13 +1,20 @@
 {
   "name": "jediswap-landing-page",
   "version": "1.0.0",
-  "description": "A landing page for JediSwap",
+  "description": "Landing page for JediSwap",
   "main": "index.js",
   "scripts": {
-    "sass": "sass styles/scss/index.scss styles/css/index.css -w",
     "watch-css": "nodemon -e scss -x \"npm run sass\"",
+    "sass": "sass styles/scss/index.scss styles/css/index.css -w",
     "dev": "concurrently --kill-others \"npm run watch-css\" \"lite-server\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "npm run build:clean && npm run build:mkdirs",
+    "build": "npm run build:sass && npm run build:copy-assets && npm run build:copy-html && npm run build:copy-js",
+    "build:clean": "rimraf dist",
+    "build:mkdirs": "mkdir -p dist/scripts && mkdir -p dist/styles && mkdir -p dist/assets",
+    "build:sass": "sass --no-source-map styles/scss/index.scss dist/styles/css/index.css",
+    "build:copy-assets": "cp -r assets/* dist/assets",
+    "build:copy-html": "cp index.html dist/",
+    "build:copy-js": "cp -r scripts/* dist/scripts"
   },
   "repository": {
     "type": "git",
@@ -17,9 +24,9 @@
   "author": "dhruvkelawala",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/meshfinance/jediswap-landing-page/issues"
+    "url": "https://github.com/jediswaplabs/jediswap-landing-page/issues"
   },
-  "homepage": "https://gitlab.com/meshfinance/jediswap-landing-page#readme",
+  "homepage": "https://github.com/jediswaplabs/jediswap-landing-page",
   "dependencies": {
     "sass": "^1.49.9"
   },

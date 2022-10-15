@@ -237,3 +237,5 @@ $RECYCLE.BIN/
 tests/reports
 
 stats.json
+
+dist/
