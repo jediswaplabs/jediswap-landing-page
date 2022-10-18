@@ -3,8 +3,6 @@ name: Release - Mainnet
 on:
   workflow_dispatch:
     inputs:
-      tags:
-        description: 'Mainnet environment'
 
 jobs:
   build:

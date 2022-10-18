@@ -4,8 +4,7 @@
   "description": "Landing page for JediSwap",
   "main": "index.js",
   "scripts": {
-    "watch-css": "nodemon -e scss -x \"yarn sass\"",
-    "sass": "sass styles/scss/index.scss styles/css/index.css -w",
+    "watch-css": "sass styles/scss/index.scss styles/css/index.css -w",
     "dev": "concurrently --kill-others \"yarn watch-css\" \"lite-server\"",
     "prebuild": "yarn build:clean && yarn build:mkdirs",
     "build": "yarn build:sass && yarn build:copy-assets && yarn build:copy-html && yarn build:copy-js",
@@ -35,7 +34,6 @@
     "cp": "^0.2.0",
     "lite-server": "^2.6.1",
     "mkdir": "^0.0.2",
-    "nodemon": "^2.0.20",
     "rimraf": "^3.0.2"
   }
 }

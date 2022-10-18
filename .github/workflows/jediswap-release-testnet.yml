@@ -3,8 +3,6 @@ name: Release - Testnet
 on:
   workflow_dispatch:
     inputs:
-      tags:
-        description: 'Testnet environment'
 
 jobs:
   build:

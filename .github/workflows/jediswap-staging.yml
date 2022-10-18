@@ -3,8 +3,6 @@ name: Release - Staging
 on:
   workflow_dispatch:
     inputs:
-      tags:
-        description: 'Staging environment'
 
 jobs:
   build:
