@@ -9,7 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: mainnet
+    environment:
+      name: mainnet
+      url: https://jediswap.xyz
 
     steps:
       - name: Checkout
