@@ -9,7 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: testnet
+    environment:
+      name: testnet
+      url: https://testnet.jediswap.xyz
 
     steps:
       - name: Checkout
