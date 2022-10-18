@@ -1,4 +1,4 @@
-name: Jediswap Landing Page Release - Mainnet
+name: Release - Mainnet
 
 on:
   workflow_dispatch:

@@ -1,4 +1,4 @@
-name: Jediswap Landing Page Release - Staging
+name: Release - Staging
 
 on:
   workflow_dispatch:
