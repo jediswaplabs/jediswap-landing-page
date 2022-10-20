@@ -2,7 +2,7 @@
   margin-top: 76px;
   @include flex(column, flex-start, center);
   position: relative;
-  background: url("../../assets/images/hero_bgd.svg") no-repeat;
+  background: url('../../assets/images/hero_bgd.svg') no-repeat;
   background-size: 100%;
   aspect-ratio: 1448 / 1438;
   width: 100%;
@@ -43,6 +43,9 @@
     line-height: 1.87rem;
     margin: 3rem;
   }
+  short-desc {
+    display: none;
+  }
 
   .logos {
     margin-top: 5rem;
@@ -69,6 +72,27 @@
   //   // padding: 1px;
   //   // background-color: white;
 
-  
   // }
+}
+@media (max-width: 480px) {
+  .section1 {
+    p.header {
+      margin: 0 0 2rem 0;
+      font-size: 3rem;
+    }
+    p.desc {
+      display: none;
+    }
+    p.short-desc {
+      display: contents;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      font-weight: 600;
+      line-height: 1.87rem;
+    }
+
+    .logos {
+      margin-top: 2rem;
+    }
+  }
 }

@@ -11,3 +11,9 @@ body {
 button {
   user-select: none;
 }
+
+@media (max-width: 480px) {
+  body {
+    padding: 0px 10px;
+  }
+}

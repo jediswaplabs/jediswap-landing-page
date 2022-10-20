@@ -256,11 +256,26 @@ header.main-header .right {
   align-items: center;
   gap: 43px;
 }
-header.main-header p {
+header.main-header .nav_list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+}
+header.main-header .nav_bar span {
+  display: none;
+}
+header.main-header .nav_link {
+  text-decoration: none;
   text-transform: capitalize;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 20px;
+}
+header.main-header .fa-xmark {
+  display: hidden;
 }
 header.main-header::after {
   content: "";
@@ -272,6 +287,58 @@ header.main-header::after {
   background: linear-gradient(90deg, rgba(226, 0, 255, 0.3) -0.73%, rgba(75, 212, 255, 0.3) 100%);
 }
 
+@media (max-width: 480px) {
+  header.main-header {
+    padding: 22px 0px;
+  }
+  header.main-header .right {
+    gap: 10px;
+  }
+  nav {
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(9, 9, 44);
+    background-color: rgba(9, 9, 44, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .nav_bar span {
+    display: block !important;
+  }
+  .nav_list {
+    flex-direction: column;
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .nav_item {
+    padding: 1rem;
+  }
+  .fa-bars {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .fa-xmark {
+    fill: white;
+    position: absolute;
+    top: 36px;
+    right: 1.25rem;
+    z-index: 10000;
+    font-size: 30px;
+    padding: 5px;
+  }
+  .header-button {
+    height: 50px;
+    flex-grow: 3;
+    font-size: 10px;
+  }
+}
 footer {
   background-color: #000000;
   padding-top: 4rem;
@@ -373,6 +440,9 @@ footer .center .row .link :hover {
   line-height: 1.87rem;
   margin: 3rem;
 }
+.section1 short-desc {
+  display: none;
+}
 .section1 .logos {
   margin-top: 5rem;
   display: flex;
@@ -382,6 +452,25 @@ footer .center .row .link :hover {
   gap: 100px;
 }
 
+@media (max-width: 480px) {
+  .section1 p.header {
+    margin: 0 0 2rem 0;
+    font-size: 3rem;
+  }
+  .section1 p.desc {
+    display: none;
+  }
+  .section1 p.short-desc {
+    display: contents;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.87rem;
+  }
+  .section1 .logos {
+    margin-top: 2rem;
+  }
+}
 .part2 {
   position: relative;
   overflow-x: clip;

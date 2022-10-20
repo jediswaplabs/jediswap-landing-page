@@ -12,15 +12,30 @@ header.main-header {
     @include flex(row, center, center, 43);
   }
 
-  p {
+  .nav_list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .nav_bar span {
+    display: none;
+  }
+  .nav_link {
+    text-decoration: none;
     text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 20px;
   }
-
+  .fa-xmark {
+    display: hidden;
+  }
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     height: 1px;
     width: 100%;
@@ -31,5 +46,62 @@ header.main-header {
       rgba(226, 0, 255, 0.3) -0.73%,
       rgba(75, 212, 255, 0.3) 100%
     );
+  }
+}
+
+@media (max-width: 480px) {
+  header.main-header {
+    padding: 22px 0px;
+
+    .right {
+      gap: 10px;
+    }
+  }
+
+  nav {
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(9, 9, 44);
+    background-color: rgba(9, 9, 44, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    // padding: 12px 1rem;
+  }
+  .nav_bar span {
+    display: block !important;
+  }
+  .nav_list {
+    flex-direction: column;
+    // position: absolute;
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .nav_item {
+    padding: 1rem;
+  }
+  .fa-bars {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .fa-xmark {
+    fill: white;
+    position: absolute;
+    top: 36px;
+    right: 1.25rem;
+    z-index: 10000;
+    font-size: 30px;
+    padding: 5px;
+  }
+  .header-button {
+    height: 50px;
+    flex-grow: 3;
+    font-size: 10px;
   }
 }

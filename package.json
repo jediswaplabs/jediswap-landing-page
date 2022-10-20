@@ -15,10 +15,7 @@
     "build:copy-html": "cp index.html dist/",
     "build:copy-js": "cp -r scripts/* dist/scripts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/meshfinance/jediswap-landing-page.git"
-  },
+  "repository": "git+https://gitlab.com/meshfinance/jediswap-landing-page.git",
   "keywords": [],
   "author": "dhruvkelawala",
   "license": "ISC",
