@@ -256,23 +256,80 @@ header.main-header .right {
   align-items: center;
   gap: 43px;
 }
-header.main-header .nav_list {
+header.main-header nav.navbar {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+header.main-header nav.navbar div.container {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  list-style: none;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
+  width: 100%;
+}
+header.main-header nav.navbar div.container div.navbar-brand {
+  width: 100%;
+}
+header.main-header nav.navbar div.container div.navbar-brand > a {
+  text-decoration: none;
+}
+header.main-header nav.navbar div.container div.navbar-brand > a img {
+  vertical-align: middle;
+}
+header.main-header nav.navbar div.container div.navbar-collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  z-index: auto;
+  flex-grow: 1;
+  width: auto !important;
+  height: auto !important;
+  visibility: visible;
+  flex-basis: auto;
+  color: white;
+}
+header.main-header nav.navbar div.container div.navbar-collapse ul.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  margin: 0;
   padding: 0;
 }
-header.main-header .nav_bar span {
-  display: none;
+header.main-header nav.navbar div.container div.navbar-collapse ul.navbar-nav li {
+  display: list-item;
+  list-style-type: none;
+  color: white;
 }
-header.main-header .nav_link {
+header.main-header nav.navbar div.container div.navbar-collapse ul.navbar-nav li a {
+  white-space: nowrap;
+  padding: 24px 20px;
   text-decoration: none;
-  text-transform: capitalize;
-  font-weight: 600;
-  letter-spacing: 1px;
+  color: white;
   font-size: 20px;
+  text-transform: capitalize;
+}
+header.main-header nav.navbar div.container div.navbar-actions {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto !important;
+  width: 100%;
+}
+header.main-header nav.navbar div.container div.navbar-actions ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+header.main-header nav.navbar div.container div.navbar-actions ul #openNavIcon {
+  display: none;
 }
 header.main-header .fa-xmark {
   display: hidden;
@@ -281,7 +338,7 @@ header.main-header::after {
   content: "";
   position: absolute;
   height: 1px;
-  width: 100%;
+  width: 100vw;
   bottom: 0;
   left: 0;
   background: linear-gradient(90deg, rgba(226, 0, 255, 0.3) -0.73%, rgba(75, 212, 255, 0.3) 100%);
